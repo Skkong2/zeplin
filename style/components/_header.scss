@@ -1,3 +1,102 @@
 .header {
 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: $dark;
+  
+  .container{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+ }
+  .logo{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 900;
+
+
+  }
+
+  .gnb {
+    display: flex;
+    
+  }
+  nav{
+    display: flex;
+    .nav-item{
+      &:hover{
+        .nav-link{
+          img{
+            &.open{
+              display: none;
+
+            }
+            &.close{
+              display: block;
+
+            }
+          }
+        }
+      }
+
+
+      .nav-link{
+        color: #ffffff;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 0 25px;
+        font-size: 14px;
+        opacity: 0.6;
+        &.is-active{
+          opacity: 1;
+
+        }
+        img{
+          margin-left: 10px;
+          &.close{
+            display: none;
+
+          }
+
+        }
+
+      }
+      .dropdown{
+        a{
+          display: none;
+          color: #ffffff;
+
+
+        }
+
+      }
+    }
+  }
+  .member-area{
+    width: 185px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .btn-login{
+    background: $lime;
+    color: $dark;
+    height: 40px;
+    width: 90px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+
+
+
+  }
 }

@@ -452,8 +452,65 @@ html, body {
   height: 100%; }
 
 .container {
-  max-width: 1230px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #151a1d; }
+  .header .container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header .logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 900; }
+  .header .gnb {
+    display: flex; }
+  .header nav {
+    display: flex; }
+    .header nav .nav-item:hover .nav-link img.open {
+      display: none; }
+    .header nav .nav-item:hover .nav-link img.close {
+      display: block; }
+    .header nav .nav-item .nav-link {
+      color: #ffffff;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      padding: 0 25px;
+      font-size: 14px;
+      opacity: 0.6; }
+      .header nav .nav-item .nav-link.is-active {
+        opacity: 1; }
+      .header nav .nav-item .nav-link img {
+        margin-left: 10px; }
+        .header nav .nav-item .nav-link img.close {
+          display: none; }
+    .header nav .nav-item .dropdown a {
+      display: none;
+      color: #ffffff; }
+  .header .member-area {
+    width: 185px;
+    display: flex;
+    justify-content: flex-end; }
+  .header .btn-login {
+    background: #cdee0a;
+    color: #151a1d;
+    height: 40px;
+    width: 90px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
